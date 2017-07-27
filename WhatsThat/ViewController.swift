@@ -37,7 +37,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
 	@IBAction func camera(_ sender: Any) {
 
 		//incase the camera is not available, just chill out
-		if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+		if !UIImagePickerController.isSourceTypeAvailable(.camera) {
 
 			return
 		}
@@ -126,7 +126,7 @@ extension ViewController : UIImagePickerControllerDelegate {
 			return
 		}
 
-		imageLabel.text = "I think this is a \(prediction)"
+		imageLabel.text = "I think this is a \(prediction.classLabel)"
 	}
 
 }
