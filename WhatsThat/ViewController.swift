@@ -9,8 +9,6 @@
 import UIKit
 import CoreML
 
-
-
 class ViewController: UIViewController, UINavigationControllerDelegate {
 	@IBOutlet var imageView: UIImageView!
 	@IBOutlet var imageLabel: UILabel!
